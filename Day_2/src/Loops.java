@@ -1,18 +1,23 @@
 public class Loops {
     public static void main(String[] args) {
-        int i;
-        int j;
-        int count = 0;
-        for (i = 0; i < 10; i++) {
-            System.err.println(i);
+        int i = 0;
+        for(; i < 10;){
+            System.out.println(i);
+            i++;
         }
-        for(i =10; i>=0; i--){
-            for(j=0;j<=i;j++){
-                count = count + 1;
-            }
-            System.out.println(i + j);
+        int count = 10;
+        System.out.println("While loop");
 
+        while(count <= 20){
+            
+            System.out.println(count);
+            count = count + 1;
         }
-        System.out.println(count);
+        System.out.println("Do while loop");
+        int dowhile = 10;
+        do { 
+            System.out.println(dowhile);
+            dowhile--;
+        } while (dowhile > 0);
     }
 }
