@@ -1,10 +1,14 @@
 public class Objects {
-    static int a = 5;
+    public String name(){
+        return "Chaitanya";
+    }
+    public int sum(int num1, int num2){
+        return num1+num2;
+    }
     public static void main(String[] args) {
-        
         Objects obj = new Objects();
-        System.out.println(a);
-        obj.a = 6;
-        System.out.println(obj.a);
+        System.out.println("name : "+obj.name());
+        System.out.println("sum : "+obj.sum(5, 6));
     }
 }
+
